@@ -1,0 +1,53 @@
+Algoritmo "exibir_tabuada"
+
+Var
+operacao, tabuada: caractere
+numero1, numero2, resultado: inteiro
+
+
+Inicio
+	escreva ("bem vindo ao programa de cálculo")
+	escreva ("selecione as seguintes opções: +,-,*,/")
+	leia (operacao)
+	se operacao for "+" entao
+		escreva ("escreva um número")
+		leia (numero1)
+		escreva("anote outro número")
+		leia (numero2)
+		escreva ("O resultado é: ")
+		resultado = numero1 + numero2
+		escreva (resultado)
+	fimse
+	se operacao for "-" entao
+		escreva ("escreva um número")
+		leia (numero1)
+		escreva ("escreva outro número")
+		leia (numero2)
+		escreva ("O resultado é: ")
+		resultado = numero1 - numero2
+		leia (resultado)
+	fimse
+	se operacao for "*" entao
+		escreva ("Se você quer multiplicar anote '*' ou 't'")
+		leia (tabuada)
+		se tabuada for "*" entao
+			escreva ("Anote um número")
+			leia (numero1)
+			escreva ("Escreva outro número")
+			leia (numero2)
+			escreva ("O resultado é: ")
+			resultado = numero1 * numero2
+			leia (resultado)
+		se tabuada for "t" entao
+			escreva (1,0,10)
+	fimse
+	se operacao for "/" entao
+		escreva ("Anote um número")
+		leia (numero1)
+		escreva ("Anote outro número")
+		leia (numero2)
+		escreva ("O resultado è: ")
+		resultado = numero1 / numero2
+		leia (resultado)
+
+
