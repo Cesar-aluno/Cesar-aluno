@@ -1,0 +1,51 @@
+#menu
+
+login = input("Digite o seu login: ")
+senha = input("Digite a sua senha: ")
+
+if senha == 'admin':
+    print(" Acesso concedido!")
+    
+    #CALCULADORA
+
+print(" Adição é A! ")
+print(" Subtração é S!")
+print(" Multiplicação é M!")
+print(" Divisão é D!")
+
+operacao = input("Digite uma operação: ")
+numero1 = int(input("Digite um número: "))
+numero2 = int(input("Digite outro número: "))
+
+
+if operacao == 'A':
+    calcular = numero1 + numero2
+    print(calcular)
+
+elif operacao == 'S':
+    calcular = numero1 - numero2
+    print(calcular)
+    
+elif operacao == 'M':
+    calcular = numero1 * numero2
+    print(calcular)
+
+elif operacao == 'D':
+    calcular = numero1 / numero2
+    print(calcular)
+
+#IDADE
+
+ano = int(input("Digite o ano: "))
+ano_nascimento = int(input("Digite o ano do seu nascimento: "))
+
+idade = ano - ano_nascimento
+print(" A sua idade é: ", idade)
+else:
+    print(" Acesso não permitido!")
+
+
+    
+
+
+    
