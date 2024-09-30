@@ -1,0 +1,51 @@
+#Algoritmo "exibir_tabuada"
+
+#Var
+#operacao, tabuada: caractere
+#numero1, numero2, resultado: inteiro
+
+
+#Inicio
+caractere = input ("Bem vindo ao programa de cálculo")
+operacao = input ("Selecione as seguintes opções: +,-,*,/")
+print (operacao)
+if operacao == "+": 
+	numero1 = input ("escreva um número")
+	print (numero1)
+	numero2 = input("anote outro número")
+	print (numero2)
+	resultado = input ("O resultado é: ")
+	resultado = numero1 + numero2
+	print (resultado)
+	
+if operacao == "-": 
+	numero1 = input ("escreva um número")
+	print (numero1)
+	numero2 = input ("escreva outro número")
+	print (numero2)
+	resultado = input ("O resultado é: ")
+	resultado = numero1 - numero2
+	print (resultado)
+	
+if operacao == "*":
+	while tabuada == input ("Se você quer multiplicar anote '*' ou 't'")
+	print (tabuada)
+if tabuada == "*":
+	numero1 = input ("Anote um número")
+	print (numero1)
+	numero = input ("Escreva outro número")
+	print (numero2)
+	resultado =	input ("O resultado é: ")
+	resultado = numero1 * numero2
+	print (resultado)
+if tabuada == "t":
+	input (1,0,10)
+
+if operacao == "/":
+	numero1 = input ("Anote um número")
+	print (numero1)
+	numero2 = input ("Anote outro número")
+	print (numero2)
+	resultado =	input ("O resultado è: ")
+	resultado = numero1 / numero2
+	print (resultado)
