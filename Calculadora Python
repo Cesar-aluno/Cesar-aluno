@@ -1,0 +1,44 @@
+# Função para realizar a operação de acordo com a escolha do utilizador
+def calculadora():
+    print("Selecione a operação:")
+    print("1 - Adição")
+    print("2 - Subtração")
+    print("3 - Multiplicação")
+    print("4 - Divisão")
+
+    try:
+        # Solicitar ao utilizador que escolha uma operação
+        escolha = input("Escolha uma operação (1/2/3/4): ")
+
+        # Pedir dois números ao utilizador
+        num1 = float(input("Insira o primeiro número: "))
+        num2 = float(input("Insira o segundo número: "))
+
+        # Verificar a escolha e realizar a operação correspondente
+        if escolha == '1':
+            resultado = num1 + num2
+            print(f"\nResultado: {num1} + {num2} = {resultado}")
+
+        elif escolha == '2':
+            resultado = num1 - num2
+            print(f"\nResultado: {num1} - {num2} = {resultado}")
+
+        elif escolha == '3':
+            resultado = num1 * num2
+            print(f"\nResultado: {num1} x {num2} = {resultado}")
+
+        elif escolha == '4':
+            # Verificar se o segundo número é zero para evitar divisão por zero
+            if num2 == 0:
+                print("\nErro: Não é possível dividir por zero!")
+            else:
+                resultado = num1 / num2
+                print(f"\nResultado: {num1} / {num2} = {resultado}")
+        else:
+            print("\nOperação inválida. Por favor, escolha uma operação válida.")
+    
+    except ValueError:
+        print("Erro: Insira um número válido.")
+
+# Chamar a função da calculadora
+calculadora()
