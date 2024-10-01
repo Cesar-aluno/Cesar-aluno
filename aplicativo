@@ -3,7 +3,7 @@
 login = input("Digite o seu login: ")
 senha = input("Digite a sua senha: ")
 
-if senha == 'admin':
+if login == 'Cesar' and senha == 'admin':
     print(" Acesso concedido!")
     
     #CALCULADORA
